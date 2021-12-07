@@ -1,7 +1,9 @@
 # Laravel Loocalization With Php File
 
 ## Create a New Laravel 8 Application
-`composer create-project laravel/laravel laravel-language-php`
+```
+composer create-project laravel/laravel laravel-language-php
+```
 
 After successfully create a project We Will create some folders inside the resources / lang folder.
 The Folder Name For Spanish And French Language
