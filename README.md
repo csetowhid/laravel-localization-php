@@ -6,13 +6,13 @@
 After successfully create a project We Will create some folders inside the resources / lang folder.
 The Folder Name For Spanish And French Language
 
-resources -> lang -> es
+resources -> lang -> es\
 resources -> lang -> fr
 
 ## Create php File In The en, bn and fr folder Named message.php
 
-resources -> lang -> en -> message.php
-resources -> lang -> es -> message.php
+resources -> lang -> en -> message.php\
+resources -> lang -> es -> message.php\
 resources -> lang -> fr -> message.php
 ## Add This Code In All message.php File 
 
@@ -20,7 +20,7 @@ resources -> lang -> fr -> message.php
 ```
 <?php
 return [
-    'title'    => 'Account',    
+    'title'     => 'Account',    
      'name'     => 'Name',    
      'email'    => 'E-mail',    
      'password' => 'Password',
