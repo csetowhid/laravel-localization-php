@@ -143,7 +143,7 @@ Add Route in <b>web.php</b>
 use App\Http\Controllers\LanguageController;
 Route::get('lang/{locale}',[LanguageController::class, 'index']);
 ```
-Add Function in Controller
+Add Function in <b>LanguageController</b>
 ```
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\App;
