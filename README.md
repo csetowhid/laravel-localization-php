@@ -9,7 +9,7 @@ The Folder Name For Spanish And French Language
 resources -> lang -> es\
 resources -> lang -> fr
 
-## Create php File In The en, bn and fr folder Named message.php
+## Create php File In The en, es and fr folder Named message.php
 
 resources -> lang -> en -> message.php\
 resources -> lang -> es -> message.php\
