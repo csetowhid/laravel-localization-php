@@ -173,3 +173,16 @@ public function handle(Request $request, Closure $next)
 ```
 
 ## Register The Middlewire in <b>kernel.php</b>
+```
+protected $middlewareGroups = [
+        'web' => [
+            \App\Http\Middleware\LanguageMiddleware::class,
+        ],
+```
+
+## Run Application
+Run This Application
+```
+php artisan serve
+```
+
