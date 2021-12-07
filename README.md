@@ -157,11 +157,11 @@ public function index(Request $request,  $locale)
         return redirect()->back();
     }
 ```
-Create Middlewire And Add This Method
+Create Middleware And Add This Method
 ```
 php artisan make:middleware LanguageMiddleware
 ```
-Add This Code in <b>LanguageMiddlewire</b>
+Add This Code in <b>LanguageMiddleware</b>
 
 ```
 use Illuminate\Support\Facades\App;
@@ -174,7 +174,7 @@ public function handle(Request $request, Closure $next)
     }
 ```
 
-## Register The Middlewire in <b>kernel.php</b>
+## Register The Middleware in <b>kernel.php</b>
 ```
 protected $middlewareGroups = [
         'web' => [
