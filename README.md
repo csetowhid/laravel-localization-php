@@ -155,3 +155,21 @@ public function index(Request $request,  $locale)
         return redirect()->back();
     }
 ```
+Create Middlewire And Add This Method
+```
+php artisan make:middleware LanguageMiddleware
+```
+Add This Code in <b>LanguageMiddlewire</b>
+
+```
+use Illuminate\Support\Facades\App;
+public function handle(Request $request, Closure $next)
+    {
+        if (session()->has('locale')) {
+            App::setLocale(session()->get('locale'));
+        }
+        return $next($request);
+    }
+```
+
+## Register The Middlewire in <b>kernel.php</b>
