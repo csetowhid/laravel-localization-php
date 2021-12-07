@@ -130,3 +130,28 @@ en.png
 es.png
 fr.png
 ```
+
+## Set up route, controller, and middleware
+Create Controller
+
+```
+php artisan make:controller LanguageController 
+```
+
+Add Route in <b>web.php</b>
+```
+use App\Http\Controllers\LanguageController;
+Route::get('lang/{locale}',[LanguageController::class, 'index']);
+```
+Add Function in Controller
+```
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\App;
+
+public function index(Request $request,  $locale)
+    {
+        App::setLocale($locale);
+        $request->session()->put('locale', $locale);
+        return redirect()->back();
+    }
+```
